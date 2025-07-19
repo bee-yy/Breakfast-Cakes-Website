@@ -19,7 +19,8 @@ export const contactContent = () => {
 	AddBgImg();
 	let div = document.createElement("div");
 
-	div.innerHTML = `<section  id= "contact-page-section">
+	div.innerHTML = `<section  id= "contact-page-section"
+	class="scroll-animate">
 			<h2>We can be at your door step</h2>
 			<p>
 				Contact us for your delivery, pickup or just come right in to our
@@ -27,7 +28,7 @@ export const contactContent = () => {
 				guilt free pleasure!
 			</p>
 		</section>
-		<section id = locations-section>
+		<section id = locations-section class="scroll-animate">
 			<h4>Our Locations</h4>
 			<div class ="locations-wrapper">
 			<article>
@@ -70,7 +71,7 @@ Breakfast  Cakes Toronto 229 Bloor Street West, Unit 5 Toronto, ON M5S 1T8</p>
 
       <article>
 				<!--  -->
-				<div>
+				<div >
 						
 						
             <p> <img src="${locationIcon}" alt="" /> Winnipeg, MB <br>
@@ -78,7 +79,7 @@ Breakfast  Cakes Winnipeg 1047 Pembina Hwy, Unit B Winnipeg, MB R3T 1Z6</p>
 				</div>
 			</article>
 		</section>
-		<section>
+		<section class="scroll-animate">
 			<div class="map-wrapper">
 	<img src="${locationsMap}" alt="locations map" />		
   	</div>

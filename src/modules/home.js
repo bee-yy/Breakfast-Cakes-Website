@@ -3,22 +3,17 @@ import Swiper from "swiper/bundle"; // includes all modules
 
 import patronImage from "../assets/patron.png";
 import halfAppleCinnamonCake from "../assets/half-apple-cinnamon.png";
-import img1 from '../assets/bg-img-1.svg';
+import img1 from "../assets/bg-img-1.svg";
 
 function AddBgImg() {
 	let img = document.querySelector("#first-img");
-	img.querySelector("img").src =img1;
+	img.querySelector("img").src = img1;
 
 	let images = document.querySelectorAll(".bg-img");
-	
-		images.forEach((img) => {
-				img.style.display = "block";
-	
 
-		});
-
-	
-
+	images.forEach((img) => {
+		img.style.display = "block";
+	});
 }
 
 export const homeContent = () => {
@@ -33,6 +28,8 @@ export const homeContent = () => {
 				providing sustained energy, mental clarity, and a sense of
 				well-being
 			</p>
+
+			<div class="bg-img-mobile-hidden" > <div/>
 		</section>
 
 		<section id="home-section-two" class="section">
@@ -164,7 +161,7 @@ export const homeContent = () => {
 			</p>
 		
 		<div class="menu-category-wrapper"> 
-		<div><img class="half-img"
+		<div class ="half-img-wrapper"><img class="half-img"
 		src="${halfAppleCinnamonCake}" alt=""/></div>
 
 			<article>
@@ -186,6 +183,7 @@ export const homeContent = () => {
 
 	requestAnimationFrame(() => {
 		new Swiper(".mySwiper", {
+			slidesPerView: 1,
 			spaceBetween: 30,
 			pagination: {
 				el: ".swiper-pagination",

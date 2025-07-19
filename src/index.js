@@ -26,7 +26,7 @@ function tabSwitch(e) {
 
 		case "contact-nav":
 			console.log("Contact Page");
-			
+
 			mainContainer.append(contactContent());
 			break;
 
@@ -44,4 +44,18 @@ document.addEventListener("DOMContentLoaded", () => {
 	mainContainer.append(homeContent());
 });
 
+let openMenu = document.querySelector(".mobile-menu-open");
+openMenu.addEventListener("click", () => {
+	document.querySelector(".mobile-navigation-menu").style.display = "block";
+	document.querySelector(".mobile-menu-close").style.display = "block";
+	document.querySelector(".mobile-menu-close img").style.display = "block";
+});
+
+let closeMenu = document.querySelector(".mobile-menu-close");
+closeMenu.addEventListener("click", () => {
+	document.querySelector(".mobile-navigation-menu").style.display = "none";
+	document.querySelector(".mobile-menu-close").style.display = "none";
+
+	document.querySelector(".mobile-menu-close img").style.display = "none";
+});
 //tab switching
