@@ -4,6 +4,7 @@ import Swiper from "swiper/bundle"; // includes all modules
 import patronImage from "../assets/patron.png";
 import halfAppleCinnamonCake from "../assets/half-apple-cinnamon.png";
 import img1 from "../assets/bg-img-1.svg";
+import img2 from "../assets/mobile-tripple-img.png";
 
 function AddBgImg() {
 	let img = document.querySelector("#first-img");
@@ -29,7 +30,10 @@ export const homeContent = () => {
 				well-being
 			</p>
 
-			<div class="bg-img-mobile-hidden" > <div/>
+			<div class="bg-img-mobile-hidden" >
+			<img src=${img2} alt ="breakfast cakes samples"/>
+
+			 <div/>
 		</section>
 
 		<section id="home-section-two" class="section">

@@ -95,6 +95,11 @@ svg {
 button {
 	/* all: unset; */
 	outline-color: transparent;
+	color: var(--color-1);
+}
+
+h6 {
+	color: var(--color-1);
 }
 
 li {
@@ -219,6 +224,10 @@ section {
 
 #home-section-three blockquote {
 	width: 721px;
+}
+
+.bg-img-mobile-hidden {
+	display: none;
 }
 
 /* SWIPER STYLES */
@@ -877,7 +886,8 @@ LARGE SCREENS
 	}
 
 	.bg-img-mobile-hidden {
-		background-image: url(../assets/mobile-tripple-img.png);
+		/* background-image: url(../assets/mobile-tripple-img.png); */
+		display: block;
 		width: 214px;
 		height: 214px;
 		margin-top: var(--spacing-large);
