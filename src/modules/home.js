@@ -31,7 +31,7 @@ export const homeContent = () => {
 			</p>
 
 			<div class="bg-img-mobile-hidden" >
-			<img src=${img2} alt ="breakfast cakes samples"/>
+			<img src="${img2} "alt ="breakfast cakes samples"/>
 
 			 <div/>
 		</section>
