@@ -839,7 +839,7 @@ LARGE SCREENS
 	.mobile-navigation-menu {
 		width: 250px;
 		height: 360px;
-		background: url(./assets/mobile-nav-bg.svg);
+		background: url(/assets/mobile-nav-bg.svg);
 		position: absolute;
 		right: 0;
 		top: 0;
